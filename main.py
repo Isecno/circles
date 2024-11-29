@@ -9,7 +9,7 @@ from PyQt6.QtGui import QPainter, QColor
 class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('ui.ui', self)  # Загружаем дизайн
+        uic.loadUi('UI.ui', self)  # Загружаем дизайн
         print('8')
         self.flag = False
         self.pushButton.clicked.connect(self.draw)
@@ -41,3 +41,4 @@ if __name__ == '__main__':
     ex.show()
     sys.excepthook = except_hook
     sys.exit(app.exec())
+
